@@ -1,0 +1,17 @@
+
+frontend
+login/auth <-> user db
+game <-> game db
+chat <-> chatdb
+
+have each game server instance also have a local db to store the info of players connected to it
+
+write each player to actual db on rand timer and when they disconnect
+
+split the world into regions for servers, chunks which change size depending on how many ppl are in them.
+
+world maps should show clear regions for chat
+
+
+
+http://gamedev.stackexchange.com/questions/5956/how-is-load-balancing-achieved-in-mmos
