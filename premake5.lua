@@ -1,5 +1,6 @@
 solution "onyx"
   configurations { "Debug", "Release" }
+  platforms {"x64"}
 
   configuration { "Debug" }
     targetdir "bin/debug"

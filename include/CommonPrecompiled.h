@@ -14,7 +14,6 @@ typedef std::string String;
 #define SLEEP_MILLI(x) std::this_thread::sleep_for(std::chrono::milliseconds(x))
 
 #include "Message.h"
-
 #include "HBThread.h"
 
 typedef std::vector<std::string> StringVec;
@@ -45,6 +44,16 @@ typedef StringVec::iterator      StringVecIt;
 #endif
 #include <stdlib.h>
 
-#define LOG(x) std::cout << x << std::endl;
-#define WARN(x) LOG("::ALERT:: " << x)
-#define ERR(x) LOG("==ERROR== " << x)
+typedef void GraphicsWindow;
+
+#include "Memory.h"
+
+typedef u32 UID;
+#include "CoreUtils.h"
+#include "Factory.h"
+
+#include "Component.h"
+#include "System.h"
+
+#include "MessageSystem.h"
+#include "Core.h"

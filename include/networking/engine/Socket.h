@@ -11,7 +11,7 @@ namespace Networking
 #if PLATFORM == PLAT_WINDOWS
   // we have to manually define this to what SOCKET is defined as
   // so that we don't shit everywhere with windows.h
-  typedef unsigned long long SockHandle;
+  typedef long long SockHandle;
 #else
   typedef int SockHandle;
 #endif

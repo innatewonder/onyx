@@ -70,7 +70,7 @@ namespace Networking
       size -= buffSize;
 
       m_testFile->ReadBytes(buffer, buffSize);
-      Send(Packet(buffer, buffSize));
+      //Send(Packet(buffer, buffSize));
       SLEEP_MILLI(6);
     }
     LOG("done sending file");
